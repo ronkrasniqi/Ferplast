@@ -1,1 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Ferplast | Plastic Solutions</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #17202a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #087f5b;
+    }
+
+    nav a {
+      color: #17202a;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #087f5b;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      padding: 70px 7%;
+      background: linear-gradient(135deg, #087f5b, #075985);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 80px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 650px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      background: white;
+      color: #087f5b;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 80px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 45px;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      color: #087f5b;
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .stats {
+      background: #17202a;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .stat h2 {
+      font-size: 42px;
+      color: #39d98a;
+    }
+
+    .contact {
+      background: white;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #0e151b;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer span {
+      color: #39d98a;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 14px;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">FERPLAST</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Plastic Solutions.</h1>
+
+      <p>
+        Quality plastic products and piping solutions
+        manufactured in Kosovo since 1996.
+      </p>
+
+      <a class="button" href="#products">Explore Products</a>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <h2 class="section-title">About Ferplast</h2>
+
+    <div class="about">
+      <p>
+        Ferplast is a Kosovo-based plastic manufacturing company
+        established in 1996 and located in Ferizaj, Kosovo.
+        We specialize in plastic products and piping solutions
+        for water supply, drainage, electrical infrastructure,
+        construction and industrial applications.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="products">
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <h3>💧 Water Pipes</h3>
+        <p>
+          Plastic piping solutions designed for reliable
+          water supply systems.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🏗️ Drainage Pipes</h3>
+        <p>
+          Durable drainage and sewer pipe solutions
+          for infrastructure projects.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>⚡ Cable Protection</h3>
+        <p>
+          Protective plastic pipes for electrical
+          and telecommunications infrastructure.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🚰 Water Reservoirs</h3>
+        <p>
+          Plastic water storage solutions for
+          different applications.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🔧 Inspection Chambers</h3>
+        <p>
+          Plastic inspection and infrastructure
+          products for construction projects.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🧱 Construction Products</h3>
+        <p>
+          Reliable plastic solutions for modern
+          construction and infrastructure.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="stats">
+
+    <div class="stat">
+      <h2>1996</h2>
+      <p>Founded</p>
+    </div>
+
+    <div class="stat">
+      <h2>20+</h2>
+      <p>Production Lines</p>
+    </div>
+
+    <div class="stat">
+      <h2>🇽🇰</h2>
+      <p>Made in Kosovo</p>
+    </div>
+
+  </section>
+
+
+  <section id="contact" class="contact">
+
+    <h2 class="section-title">Contact Ferplast</h2>
+
+    <p>📍 Ferizaj, Kosovo</p>
+
+    <p>📞 +383 44 120 486</p>
+
+    <p>📞 +383 44 730 770</p>
+
+    <p>✉️ ferplast_7@yahoo.com</p>
+
+  </section>
+
+
+  <footer>
+    <p>
+      © 2026 <span>Ferplast</span>. All rights reserved.
+    </p>
+
+    <p>Quality plastic solutions from Kosovo 🇽🇰</p>
+  </footer>
+
+</body>
+</html>
